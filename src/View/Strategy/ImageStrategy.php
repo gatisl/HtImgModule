@@ -119,6 +119,6 @@ class ImageStrategy implements ListenerAggregateInterface
             'xbm'   => 'image/xbm',
         );
 
-        return $mimeTypes[$format];
+        return $mimeTypes[strtolower($format)];
     }
 }
